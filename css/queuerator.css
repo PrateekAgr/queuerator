@@ -4,16 +4,17 @@
 }
 
 body{
-	background: #33ccff;
-  color: #000;
+	background: #000;
+  color: #fff;
   margin:0;
-  font-family: 'Open Sans', sans-serif;
-  
+  font-family: 'Open Sans', sans-serif; 
+  background: linear-gradient( #7474bf, #348ac7);
+  background-size: 1400px 700px; 
 }
 
 .nav-bar{
-  background: #f2f2f2;
-  color:#000;
+  background: #000;
+  color:#fff;
   font-family: 'Open Sans', sans-serif;
   height: 5em;
   position: fixed;
@@ -23,58 +24,96 @@ body{
 }
   .brand{
     margin-left: 2em;
-    margin-top: -0.70em;
+    margin-top: 0.6em;
     padding-top:0;
     
   }
     #name{
-    
-      font-size: 3em;
+      font-size: 2em;
     }
     #tag-line{
-      margin-left: 0.55em;
-      font-size: 1em;
-      color:#8c8c8c;
+      margin-left: 1.5em;
+      margin-top:-0.50em;
+      font-size: 1.1em;
     }
   
   .nav-button{
     float: right;
-    margin-right: 2em;
-    margin-top: -1.5em;
+    margin-right: 1.5em;
+    margin-top: -1.4em;
     font-size: 2em !important;
-    color:#ffa500;
-    border:0 solid black;
-    background: #f2f2f2;
+    color:#fff;
   }
 
   .nav-bar-options
   {
     background:hsla(0, 0%, 0%,0.95);
     width: 100vw;
-    height:100vh;
+    height: 100vh;
     z-index:2;
     position:fixed;
     top:0;
+    display: none;
   }
   
   #nav-bar-list{
-    margin-top:13em;
-    margin-left: 30em !important;
+    margin-top: 10em;
+    margin-left: 4em !important;
+    padding:8px;
     list-style-type: none;
-    display: inline-block !important;
     text-align: center;
   }
   #nav-bar-list a
   {
     text-decoration-line:none;
-    color:#fff;
-    font-size: 3em;
-    padding: 2em;
-    
+    color:#757575;
+    font-size: 36px;
+    padding:8px 16px;
+    font-family:"Montserrat",sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.09em;
+    display: block;
+  }
+  #nav-bar-list a:hover
+  {
+   color: #fff;
+  }
+  .nav-bar-cross{
+    color:#757575;
+    float:right;
+    margin-right: 1.25em ;
+    margin-top: 0.26em ;
+    font-size: 2.5em !important;
+  }
+
+  .homepage-image img{
+    position: absolute;
+    top:5em;
+    left:35em;
+    width:50.4em;
+    height:36.41em;
+  }
+  .homepage-text #large-text{
+    position: absolute;
+    top:3.5em;
+    left:2em;
+    font-size: 2.5em;
+    font-family: 'Muli', sans-serif;
+    padding-top:2em;
+  }
+  #emphasis-text{
+    font-weight: 700;
+  }
+  .homepage-text #small-text{
+    position: absolute;
+    top:18em;
+    left:3.3em;
+    font-size: 1.5em;
+    font-family: 'Muli', sans-serif;
+    padding-top:2em;
   }
 
   @media (max-width: 768px) {
-  
     .nav-bar{
       height:3em ;
     }
@@ -91,6 +130,13 @@ body{
     .nav-button{
       font-size: 1.5em !important;
       margin-right: 0.5em;
-      margin-top:-1.4em;
+      margin-top:-1.2em;
+    }
+    .nav-bar-cross{
+      color:#757575;
+      float:right;
+      font-size: 2em !important;
+      margin-right: 0.4em ;
+      margin-top: 0.11em ;
     }
   }
